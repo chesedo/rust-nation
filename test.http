@@ -1,0 +1,20 @@
+### Public is accessible without authentication
+GET /public HTTP/1.1
+Host: localhost:8000
+
+### Login to get a token
+# @name login
+POST /login HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+    "client_id": "foo",
+    "client_secret": "bar"
+}
+
+### Use the token to access the protected resource
+@authToken = {{login.response.body.$.access_token}}
+GET /private HTTP/1.1
+Host: localhost:8000
+Authorization: Bearer {{authToken}}
