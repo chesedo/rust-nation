@@ -1,0 +1,11 @@
+### Making a call without a token
+GET http://localhost:8000
+
+
+### Making a call with a token
+GET http://localhost:8000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwic2NvcGVzIjpbIm9yZGVyIl19.mrcMO2f8DbuV2HuczS4orrKq0DaNGvjdDjIq6HQJ5ds
+
+### Making a call with a token (user-service)
+GET https://run2.shuttleapp.rs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwic2NvcGVzIjpbIm9yZGVyIl19.mrcMO2f8DbuV2HuczS4orrKq0DaNGvjdDjIq6HQJ5ds
