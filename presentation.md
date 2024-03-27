@@ -30,6 +30,9 @@ header, footer {
 .shuttle {
   color: #F25100
 }
+a {
+  color: #fedb30;
+}
 </style>
 
 # Creating a microservice app with <span class="shuttle">Shuttle</span>
@@ -51,6 +54,8 @@ header, footer {
 Interactive tutorial
 Interleave theory
 Ask questions at any time
+
+https://github.com/chesedo/rust-nation
 
 ---
 
@@ -180,3 +185,5 @@ Not ideal for session management
 <!-- footer: '' -->
 
 # Questions?
+
+https://github.com/chesedo/rust-nation
